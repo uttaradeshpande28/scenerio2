@@ -1,4 +1,5 @@
 Sceneroi 2
+
 Imagine a server with the following specs:
 ● 4 times Intel(R) Xeon(R) CPU E7-4830 v4 @ 2.00GHz
 ● 64GB of ram
@@ -34,3 +35,18 @@ case and how would you do that? What are the challenges of monitoring this?
 - Handling SSL/TLS offloading: Since the server is responsible for SSL/TLS encryption and decryption, it is important to monitor the SSL/TLS handshake time to ensure that it does not become a bottleneck.
 
 - Dealing with false positives: With so many metrics to monitor, it is important to set up alerts carefully to avoid false positives, which could lead to alert fatigue.
+
+## To mitigate these challenges
+- it is important to carefully select the monitoring tools and set up appropriate alerts and thresholds. 
+
+- It is also important to regularly review the metrics being monitored and adjust the alerts and thresholds as needed.
+
+- Capacity planning: While monitoring the server, it is important to keep an eye on the resource utilization trends to predict future growth and plan for additional capacity accordingly.
+
+- Load testing: It is a good practice to periodically perform load testing on the server to ensure that it can handle the expected workload and identify any potential bottlenecks.
+
+- Logging and log analysis: It is important to configure logging on the server and analyze the logs to identify potential issues and troubleshoot them quickly.
+
+- Security monitoring: Since the server is responsible for SSL offloading, it is important to monitor for any security threats and vulnerabilities that could affect the server.
+
+- Regular maintenance: Regular maintenance tasks such as patching, updates, and backups should be performed to ensure the server is running smoothly and can handle unexpected failures or disasters.
